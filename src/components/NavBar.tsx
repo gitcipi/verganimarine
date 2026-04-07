@@ -21,7 +21,7 @@ export function NavBar() {
       }}
     >
       <div className="text-xl md:text-2xl font-light tracking-widest silvery-text">
-        VERGANI
+        VERGANI MARINE
       </div>
 
       <div className="hidden md:flex items-center gap-8 text-sm font-light tracking-wider text-white/70">

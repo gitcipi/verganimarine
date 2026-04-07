@@ -55,9 +55,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: "easeOut" }}
-              className="text-5xl md:text-7xl lg:text-9xl font-thin tracking-[0.2em] md:tracking-[0.3em] uppercase silvery-text mb-4"
+              className="text-4xl md:text-6xl lg:text-8xl font-thin tracking-[0.2em] md:tracking-[0.3em] uppercase silvery-text mb-4"
             >
-              VERGANI
+              VERGANI MARINE
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0 }}
