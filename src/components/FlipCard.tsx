@@ -14,7 +14,7 @@ export function FlipCard({ title, frontContent, backContent }: FlipCardProps) {
 
   return (
     <div 
-      className="relative w-full h-[32rem] sm:h-[36rem] perspective-1000 cursor-pointer group"
+      className="relative w-full h-[28rem] sm:h-[32rem] md:h-[36rem] perspective-1000 cursor-pointer group"
       onClick={() => setIsFlipped(!isFlipped)}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}

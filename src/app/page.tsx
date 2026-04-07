@@ -88,10 +88,10 @@ export default function Home() {
             className="absolute inset-0 flex flex-col items-center pt-32 pb-16 px-4 md:px-12 w-full h-full"
             style={{ opacity: cardsOpacity, y: cardsY }}
           >
-            <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-auto mb-auto">
+            <div className="w-full max-w-7xl mx-auto flex flex-row md:grid md:grid-cols-3 gap-6 md:gap-12 mt-auto mb-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory px-4 md:px-0 pb-8 md:pb-0">
               
               {/* BRAND 1: MARINE */}
-              <div id="marine">
+              <div id="marine" className="min-w-[85vw] md:min-w-0 snap-center">
                 <FlipCard 
                   title="VERGANI MARINE"
                   frontContent={
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
 
               {/* BRAND 2: DESIGN */}
-              <div id="design">
+              <div id="design" className="min-w-[85vw] md:min-w-0 snap-center">
                 <FlipCard 
                   title="VERGANI DESIGN"
                   frontContent={
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
 
               {/* BRAND 3: STUDIO */}
-              <div id="studio">
+              <div id="studio" className="min-w-[85vw] md:min-w-0 snap-center">
                <FlipCard 
                   title="VERGANI STUDIO"
                   frontContent={
