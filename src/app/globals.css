@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  --color-muted: #b3b3b3;
+  --color-primary: #0050FF;
+  --color-accent: #00D6FF;
+  --font-sans: var(--font-montserrat), sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for seamless experience */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Honeycomb pattern overlay */
+.bg-honeycomb {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='69.28203230275509' viewBox='0 0 40 69.28203230275509' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 17.32050807568877L20 5.773502691896256L0 17.32050807568877L0 40.4145188432738L20 51.96152422706631L40 40.4145188432738V17.32050807568877ZM20 28.867513459481284L0 17.32050807568877V-5.773502691896256L20 -17.320508075688774L40 -5.773502691896256V17.32050807568877L20 28.867513459481284ZM20 63.50853501085883L0 51.96152422706631V28.867513459481284L20 17.32050807568877L40 28.867513459481284V51.96152422706631L20 63.50853501085883Z' fill='%23ffffff' fill-opacity='0.015' fill-rule='evenodd'/%3E");
+}
+
+.silvery-text {
+  background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-panel {
+  background: rgba(10, 10, 12, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
